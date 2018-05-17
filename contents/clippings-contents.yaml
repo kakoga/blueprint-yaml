@@ -1,0 +1,14 @@
+type: content
+content:
+  -
+    site_name: Zesty Pet Clinic
+    logo:
+    logo_height: 50
+    below_logo_text:
+    footer_text: PetDesk with Zesty.io
+    phone: 555-555-5555
+    telephone_number_height: 20
+    request_button_font_size: 18
+    petdesk_ref_code: 1359
+    pop_up_content:
+      
