@@ -1,0 +1,43 @@
+name: Chameleon
+type: blueprint
+version: 1.0
+meta:
+  cover: https://raw.githubusercontent.com/kakoga/blueprint-yaml/master/cover.png
+  shield: https://raw.githubusercontent.com/kakoga/blueprint-yaml/master/shield.png
+settings:
+  general:
+    robots_on: true
+    site_protocol: https
+    always_redirect_to_https: false
+    preferred_domain_prefix: false
+    show_in_title: true
+  developer:
+    ajax_cors_allow_any_origin: false
+    parsley_debugger: false
+    tips: true
+    basic_content_api_enabled: false
+    basic_content_api_cors_allow_any_origin: false
+    auto_include-js_in_head: true
+  contact:
+    sending_email: NULL
+    recipients: NULL
+    reply_email: NULL
+
+files:
+    head: head.xhtml
+    styleVariables: style-variables.yaml
+    views: views/
+    javascript: js/
+    styles: styles/
+
+collections:
+  -
+    ### this is a templateset, dataset, or pageset
+  label:
+  name:
+  view:
+  type:
+  content: ### relative path to file that has content for each field
+  fields:
+    -
+      ### these are the fields for that templateset, dataset, or pageset
