@@ -33,11 +33,86 @@ files:
 collections:
   -
     ### this is a templateset, dataset, or pageset
-  label:
-  name:
+  label: Clippings
+  name: clippings
   view:
-  type:
-  content: ### relative path to file that has content for each field
+  type: dataset
+  content: contents/clippings-contents.yaml ### relative path to file that has content for each field
   fields:
     -
       ### these are the fields for that templateset, dataset, or pageset
+      name: site_name
+      label: Site Name
+      type: text
+      required: true
+    -
+      name: logo
+      label: logo
+      type: images
+      limit: 1
+    -
+      name: logo_height
+      label: Logo Height
+      type: text
+    -
+      name: below_logo_text
+      label: Below Logo Text
+      type: text
+    -
+      name: footer_text
+      label: Footer Text
+      type: text
+    -
+      name: phone
+      label: Main Phone
+      type: text
+    -
+      name: telephone_number_height
+      label: Telephone Number Height (pixels)
+      type: text
+    -
+      name: request_button_font_size
+      label: Request Button Font Size (pixels)
+      type: text
+    -
+      name: petdesk_ref_code
+      label: Petdesk Reference Code
+      type: text
+    -
+      name: pop_up_content
+      label: Pop-up Content
+      type: wysiwyg_advanced
+
+  -
+  label: Homepage
+  name: homepage
+  view: views/homepage.tpl
+  type: templateset
+  content: contents/homepage.yaml ### relative path to file that has content for each field
+  fields:
+    -
+      name: homepage_title ### Field name cannot begin with _, _ are for reserved field names
+      label: Homepage Title
+      type: text ### Field types drawn from https://developer.zesty.io/docs/content-schemas/set-fields/
+      required: true
+    -
+      name: background_pattern
+      label: Background Pattern
+      type: images
+      list: 1
+    -
+      name: timeline_text
+      label: Timeline text (leave blank if you do not want a timeline on your site)
+      type: text
+    -
+      name: timeline_subtitle
+      label: Timeline Subtitle
+      type: text
+    -
+      name: timeline_button_text
+      label: Timeline Button text
+      type: text
+    -
+      name: timeline_btn_links_to
+      label: Timeline Button Links To
+      type: internal_link
