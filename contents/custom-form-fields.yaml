@@ -1,0 +1,6 @@
+type: content
+content:
+  -
+    custom_field_name: Comments
+    field_type_toggle: 1
+    sort_order: 1

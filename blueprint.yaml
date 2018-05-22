@@ -17,7 +17,7 @@ settings:
     tips: true
     basic_content_api_enabled: false
     basic_content_api_cors_allow_any_origin: false
-    auto_include-js_in_head: true
+    auto_include_js_in_head: true
   contact:
     sending_email: NULL
     recipients: NULL
@@ -31,88 +31,140 @@ files:
     styles: styles/
 
 collections:
-  -
+-
     ### this is a templateset, dataset, or pageset
-  label: Clippings
-  name: clippings
-  view:
-  type: dataset
-  content: contents/clippings-contents.yaml ### relative path to file that has content for each field
-  fields:
-    -
-      ### these are the fields for that templateset, dataset, or pageset
-      name: site_name
-      label: Site Name
-      type: text
-      required: true
-    -
-      name: logo
-      label: logo
-      type: images
-      limit: 1
-    -
-      name: logo_height
-      label: Logo Height
-      type: text
-    -
-      name: below_logo_text
-      label: Below Logo Text
-      type: text
-    -
-      name: footer_text
-      label: Footer Text
-      type: text
-    -
-      name: phone
-      label: Main Phone
-      type: text
-    -
-      name: telephone_number_height
-      label: Telephone Number Height (pixels)
-      type: text
-    -
-      name: request_button_font_size
-      label: Request Button Font Size (pixels)
-      type: text
-    -
-      name: petdesk_ref_code
-      label: Petdesk Reference Code
-      type: text
-    -
-      name: pop_up_content
-      label: Pop-up Content
-      type: wysiwyg_advanced
-
+label: Clippings
+name: clippings
+type: dataset
+content: contents/clippings-contents.yaml ### relative path to file that has content for each field
+fields:
   -
-  label: Homepage
-  name: homepage
-  view: views/homepage.tpl
-  type: templateset
-  content: contents/homepage.yaml ### relative path to file that has content for each field
-  fields:
-    -
-      name: homepage_title ### Field name cannot begin with _, _ are for reserved field names
-      label: Homepage Title
-      type: text ### Field types drawn from https://developer.zesty.io/docs/content-schemas/set-fields/
+    ### these are the fields for that templateset, dataset, or pageset
+    name: site_name
+    label: Site Name
+    type: text
+    options:
       required: true
-    -
-      name: background_pattern
-      label: Background Pattern
-      type: images
-      list: 1
-    -
-      name: timeline_text
-      label: Timeline text (leave blank if you do not want a timeline on your site)
-      type: text
-    -
-      name: timeline_subtitle
-      label: Timeline Subtitle
-      type: text
-    -
-      name: timeline_button_text
-      label: Timeline Button text
-      type: text
-    -
-      name: timeline_btn_links_to
-      label: Timeline Button Links To
-      type: internal_link
+  -
+    name: logo
+    label: logo
+    type: images
+    options:
+      limit: 1
+  -
+    name: logo_height
+    label: Logo Height
+    type: text
+  -
+    name: below_logo_text
+    label: Below Logo Text
+    type: text
+  -
+    name: footer_text
+    label: Footer Text
+    type: text
+  -
+    name: phone
+    label: Main Phone
+    type: text
+  -
+    name: telephone_number_height
+    label: Telephone Number Height (pixels)
+    type: text
+  -
+    name: request_button_font_size
+    label: Request Button Font Size (pixels)
+    type: text
+  -
+    name: petdesk_ref_code
+    label: Petdesk Reference Code
+    type: text
+  -
+    name: pop_up_content
+    label: Pop-up Content
+    type: wysiwyg_advanced
+-
+label: Social Links
+name: social_links
+type: dataset
+content: contents/social-links.yaml
+fields:
+  -
+    name: name
+    label: Name
+    type: text
+    options:
+      list: true
+  -
+    name: font_awesome_icon
+    label: Font Awesome Icon Name
+    type: text
+    options:
+      list: true
+  -
+    name: url
+    label: Social Media Link
+    type: text
+    options:
+      list: true
+
+-
+label: Custom Form fields
+name: custom_form_fields
+type: dataset
+content: contents/custom-form-fields.yaml
+fields:
+  -
+    name: custom_field_name
+    label: Custom Form Name
+    type: text
+  -
+    name: field_type_toggle
+    label: Field Type (text: 150 character limit; textarea: unlimited)
+    type: yes_no
+    options:
+      0:Text;
+      1:Textarea;
+      list: true
+  -
+    name: sort_order
+    label: Sort Order
+    type: sort
+    options:
+      list: true
+
+-
+label: Homepage
+name: homepage
+view: views/homepage.tpl
+type: templateset
+content: contents/homepage.yaml ### relative path to file that has content for each field
+fields:
+  -
+    name: homepage_title ### Field name cannot begin with _, _ are for reserved field names
+    label: Homepage Title
+    type: text ### Field types drawn from https://developer.zesty.io/docs/content-schemas/set-fields/
+    options:
+      required: true
+  -
+    name: background_pattern
+    label: Background Pattern
+    type: images
+    options:
+      list: true
+  -
+    name: timeline_text
+    label: Timeline text (leave blank if you do not want a timeline on your site)
+    type: text
+  -
+    name: timeline_subtitle
+    label: Timeline Subtitle
+    type: text
+  -
+    name: timeline_button_text
+    label: Timeline Button text
+    type: text
+  -
+    name: timeline_btn_links_to
+    label: Timeline Button Links To
+    type: internal_link
