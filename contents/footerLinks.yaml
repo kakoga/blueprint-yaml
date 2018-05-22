@@ -1,0 +1,10 @@
+type: content
+content:
+  -
+    linkTitle: Privacy Policy
+    link: 516
+    sortOrder: 1
+  -
+    linkTitle: Terms of Use
+    link: 517
+    sortOrder: 2

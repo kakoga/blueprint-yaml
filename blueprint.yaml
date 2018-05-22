@@ -132,6 +132,32 @@ fields:
     type: sort
     options:
       list: true
+-
+  label: Footer links e.g. Terms of Use
+  name: footerLinks
+  type: dataset
+  content: contents/footerLinks.yaml
+  fields:
+  -
+    label: Link Title
+    name: linkTitle
+    type: text
+    options:
+      list: true
+  -
+    label: Link
+    name: link
+    type: text
+    options:
+      list: true
+  -
+    label: Sort Order
+    name: sortOrder
+    type: sort
+    options:
+      list: true
+
+
 
 -
 label: Homepage
