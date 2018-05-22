@@ -6,38 +6,38 @@ meta:
   shield: https://raw.githubusercontent.com/kakoga/blueprint-yaml/master/shield.png
 settings:
   general:
-    robots_on: true
-    site_protocol: https
-    always_redirect_to_https: false
-    preferred_domain_prefix: false
-    show_in_title: true
+    robotsOn: true
+    siteProtocol: https
+    alwaysRedirectToHttps: false
+    preferredDomainPrefix: false
+    showInTitle: true
   developer:
-    ajax_cors_allow_any_origin: false
-    parsley_debugger: false
+    ajaxCorsAllowAnyOrigin: false
+    parsleyDebugger: false
     tips: true
-    basic_content_api_enabled: false
-    basic_content_api_cors_allow_any_origin: false
-    auto_include_js_in_head: true
+    basicContentApiEnabled: false
+    basicContentApiCorsAllowAnyOrigin: false
+    autoIncludeJsInHead: true
   contact:
-    sending_email: NULL
+    sendingEmail: NULL
     recipients: NULL
-    reply_email: NULL
-
+    replyEmail: NULL
 files:
     head: head.xhtml
     styleVariables: style-variables.yaml
     views: views/
     javascript: js/
     styles: styles/
-
 collections:
 -
-    ### this is a templateset, dataset, or pageset
-label: Clippings
-name: clippings
-type: dataset
-content: contents/clippings-contents.yaml ### relative path to file that has content for each field
-fields:
+  ### this is a templateset, dataset, or pageset
+  label: Clippings
+  name: clippings
+  type: dataset
+  content: contents/clippings-contents.yaml ### relative path to file that has content for each field
+  hasRoute: false
+  showAsTable: false
+  fields:
   -
     ### these are the fields for that templateset, dataset, or pageset
     name: site_name
@@ -84,11 +84,13 @@ fields:
     label: Pop-up Content
     type: wysiwyg_advanced
 -
-label: Social Links
-name: social_links
-type: dataset
-content: contents/social-links.yaml
-fields:
+  label: Social Links
+  name: social_links
+  type: dataset
+  content: contents/social-links.yaml
+  hasRoute: false
+  showAsTable: false
+  fields:
   -
     name: name
     label: Name
@@ -107,24 +109,25 @@ fields:
     type: text
     options:
       list: true
-
 -
-label: Custom Form fields
-name: custom_form_fields
-type: dataset
-content: contents/custom-form-fields.yaml
-fields:
+  label: Custom Form fields
+  name: custom_form_fields
+  type: dataset
+  content: contents/custom-form-fields.yaml
+  hasRoute: false
+  showAsTable: false
+  fields:
   -
     name: custom_field_name
     label: Custom Form Name
     type: text
   -
     name: field_type_toggle
-    label: Field Type (text: 150 character limit; textarea: unlimited)
+    label: "Field Type (text: 150 character limit; textarea: unlimited)"
     type: yes_no
     options:
-      0:Text;
-      1:Textarea;
+      0: Text
+      1: Textarea
       list: true
   -
     name: sort_order
@@ -137,6 +140,8 @@ fields:
   name: footerLinks
   type: dataset
   content: contents/footerLinks.yaml
+  hasRoute: false
+  showAsTable: false
   fields:
   -
     label: Link Title
@@ -161,33 +166,36 @@ fields:
   name: footerLogos
   type: dataset
   content: contents/footerLogos
+  hasRoute: false
+  showAsTable: false
   fields:
-    -
-      label: Logo Title
-      name: logoTitle
-      type: text
-      options:
+  -
+    label: Logo Title
+    name: logoTitle
+    type: text
+    options:
+      list: true
+  -
+    label: Footer Logo
+    name: footerLogo
+    type: images
+    options:
+      list: true
+  -
+    label: Sort Order
+    name: sortOrder
+    type: sort
+    options:
         list: true
-    -
-      label: Footer Logo
-      name: footerLogo
-      type: images
-      options:
-        list: true
-    -
-      label: Sort Order
-      name: sortOrder
-      type: sort
-      options:
-        list: true
-
 -
-label: Homepage
-name: homepage
-view: views/homepage.tpl
-type: templateset
-content: contents/homepage.yaml ### relative path to file that has content for each field
-fields:
+  label: Homepage
+  name: homepage
+  view: views/homepage.tpl
+  type: templateset
+  content: contents/homepage.yaml ### relative path to file that has content for each field
+  hasRoute: true
+  showAsTable: false
+  fields:
   -
     name: homepage_title ### Field name cannot begin with _, _ are for reserved field names
     label: Homepage Title
@@ -201,8 +209,8 @@ fields:
     options:
       list: true
   -
-    name: timeline_title
-    label: Timeline Title (leave blank if you do not want a timeline on your site)
+    name: timeline_text
+    label: Timeline text (leave blank if you do not want a timeline on your site)
     type: text
   -
     name: timeline_subtitle
@@ -216,3 +224,64 @@ fields:
     name: timeline_btn_links_to
     label: Timeline Button Links To
     type: internal_link
+-
+  label: Homepage Slides
+  name: homepageSlides
+  type: dataset
+  content: contents/homepageSlides.yaml
+  hasRoute: false
+  showAsTable: true
+  options:
+    parentItem: zestyHome
+  fields:
+    -
+      label: Title
+      name: title
+      type: text
+      options:
+        list: true
+    -
+      label: Second line
+      name: secondLine
+      type: text
+      options:
+        list: true
+    -
+      label: Background Video
+      name: backgroundVideo
+      type: files
+      options:
+        list: true:
+    -
+      label: Background Image
+      name: backgroundImage
+      type: images
+      options:
+        list: true
+    -
+      label: Horizontal Alignment for Mobile
+      name: horizontalAlignmentForMobile
+      type: dropdown
+      options:
+        left: Left
+        center: Center
+        right: Right
+        list: true
+    -
+      label: Button Text
+      name: buttonText
+      type: text
+      options:
+        list: true
+    -
+      label: Links To
+      name: linksTo
+      type: internalLink
+      options:
+        list: true
+    -
+      label: Sort Order
+      name: sortOrder
+      type: sort
+      options:
+        list: true

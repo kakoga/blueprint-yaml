@@ -1,0 +1,10 @@
+type: content
+content:
+  title: After-Hours Emergencies?
+  secondLine: Call<br>1-800-555-5555
+  backgroundVideo:
+  backgroundImage: https://20c8f9aa0640fa57fb9f-797f92b87a3f6608f6aa93d5326d7650.ssl.cf2.rackcdn.com/patient-resources-hero.9c27d5af619089da8db7cb29e414f6ac.HyToAwPcl.jpg
+  horizontalAlignmentForMobile: Center
+  buttonText: Contact Us
+  linksTo: 521
+  sortOrder: 1
