@@ -1,0 +1,20 @@
+type: content
+content:
+  -
+    bubbleTitle: Baby
+    bubbleSubtitle: Small Beginnings
+    bubbleImage: https://20c8f9aa0640fa57fb9f-797f92b87a3f6608f6aa93d5326d7650.ssl.cf2.rackcdn.com/services-general-health.268992a1641e3c018d91764a7c76154d.H1s4JuD5l.jpg
+    bubbleBlurb: Give your baby animal the best with our Baby Health and Wellness Package, which includes vaccines, a wellness check, and grooming.
+    sortOrder: 1
+  -
+    bubbleTitle: Adult
+    bubbleSubtitle: Prime-of-life
+    bubbleImage: https://20c8f9aa0640fa57fb9f-797f92b87a3f6608f6aa93d5326d7650.ssl.cf2.rackcdn.com/homepage-timeline-adult-02.268992a1641e3c018d91764a7c76154d.H1lzfuw9x.jpeg
+    bubbleBlurb: Make sure your adult stays healthy our Adult Health and Wellness Package which includes a wellness exam, vaccine boosters, a heartworm check, and more.
+    sortOrder: 2
+  -
+    bubbleTitle: Senior
+    bubbleSubtitle: Healthy & Active in Old Age
+    bubbleImage: https://20c8f9aa0640fa57fb9f-797f92b87a3f6608f6aa93d5326d7650.ssl.cf2.rackcdn.com/old-dog-copy.268992a1641e3c018d91764a7c76154d.jpg
+    bubbleBlurb: Make sure your senior has the best quality of life with our Senior Care Package. We'll help you keep your pet healthy with a comprehensive exam, blood work, x-rays and more to ensure your pets health well into old age.
+    sortOrder: 3

@@ -125,9 +125,8 @@ collections:
     name: field_type_toggle
     label: "Field Type (text: 150 character limit; textarea: unlimited)"
     type: yes_no
+    yesNo: "0:Text;1:Textarea;"
     options:
-      0: Text
-      1: Textarea
       list: true
   -
     name: sort_order
@@ -262,10 +261,8 @@ collections:
       label: Horizontal Alignment for Mobile
       name: horizontalAlignmentForMobile
       type: dropdown
+      dropdown: "left:Left;center;Center;right:Right"
       options:
-        left: Left
-        center: Center
-        right: Right
         list: true
     -
       label: Button Text
@@ -277,6 +274,46 @@ collections:
       label: Links To
       name: linksTo
       type: internalLink
+      options:
+        list: true
+    -
+      label: Sort Order
+      name: sortOrder
+      type: sort
+      options:
+        list: true
+-
+  label: Homepage Timeline
+  name: homepageAboutTimeline
+  type: dataset
+  content: contents/homepageTimeline
+  hasRoute: false
+  showAsTable: true
+  options:
+    parentItem: zestyHome
+  fields:
+    -
+      label: Bubble Title
+      name: bubbleTitle
+      type: text
+      options:
+        list: true
+    -
+      label: Bubble Subtitle
+      name: bubbleSubtitle
+      type: text
+      options:
+        list: true
+    -
+      label: Bubble Image
+      name: bubbleImage
+      type: images
+      options:
+        list: true
+    -
+      label: Bubble Blurb
+      name: bubbleBlurb
+      type: textarea
       options:
         list: true
     -
