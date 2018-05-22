@@ -181,8 +181,6 @@ fields:
       options:
         list: true
 
-
-
 -
 label: Homepage
 name: homepage
@@ -203,8 +201,8 @@ fields:
     options:
       list: true
   -
-    name: timeline_text
-    label: Timeline text (leave blank if you do not want a timeline on your site)
+    name: timeline_title
+    label: Timeline Title (leave blank if you do not want a timeline on your site)
     type: text
   -
     name: timeline_subtitle
