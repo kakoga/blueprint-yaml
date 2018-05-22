@@ -408,3 +408,23 @@ collections:
       type: sort
       options:
         list: true
+-
+  label: Generic Page
+  name: genericPage
+  type: templateset
+  view: views/generic_page.tpl
+  content: contents/generic_page.yaml
+  hasRoute: true
+  showAsTable: false
+  field:
+    -
+      label: "Page Title (H1)"
+      name: title
+      type: text
+      options:
+        required: true
+    -
+      label: Page Content
+      name: content
+      type: wysiwyg_advanced
+      
