@@ -273,7 +273,7 @@ collections:
     -
       label: Links To
       name: linksTo
-      type: internalLink
+      type: internal_link
       options:
         list: true
     -
@@ -314,6 +314,52 @@ collections:
       label: Bubble Blurb
       name: bubbleBlurb
       type: textarea
+      options:
+        list: true
+    -
+      label: Sort Order
+      name: sortOrder
+      type: sort
+      options:
+        list: true
+-
+  label: Homepage Squares
+  name: homepageSquares
+  type: dataset
+  content: contents/homepageSquares
+  hasRoute: false
+  showAsTable: true
+  options:
+    list: true
+  fields:
+    -
+      label: Image Title
+      name: imageTitle
+      type: text
+      options:
+        list: true
+    -
+      label: Image
+      name: image
+      type: text
+      options:
+        list: true
+    -
+      label: Image Caption
+      name: imageCaption
+      type: wysiwyg_advanced
+      options:
+        list: true
+    -
+      label: Button Text
+      name: buttonText
+      type: text
+      options:
+        list: true
+    -
+      label: Links To
+      name: linksTo
+      type: internal_link
       options:
         list: true
     -

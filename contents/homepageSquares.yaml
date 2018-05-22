@@ -1,0 +1,44 @@
+type: content
+content:
+  -
+    imageTitle: Care Packages
+    image: https://20c8f9aa0640fa57fb9f-797f92b87a3f6608f6aa93d5326d7650.ssl.cf2.rackcdn.com/homepage-squares-01-02.01c640ff1d490897fd6b24531d9f4dc9.jpeg
+    imageCaption: <p>We offer care packages for each stage of life.</p>
+    buttonText: Learn More
+    linksTo: 503
+    sortOrder: 1
+  -
+    imageTitle: Day Care
+    image: https://20c8f9aa0640fa57fb9f-797f92b87a3f6608f6aa93d5326d7650.ssl.cf2.rackcdn.com/play.01c640ff1d490897fd6b24531d9f4dc9.H1PyWLs9g.jpeg
+    imageCaption: <p>We offer day care activities and training classes.</p>
+    buttonText: Learn More
+    linksTo: 501
+    sortOrder: 2
+  -
+    imageTitle: Services
+    image: https://20c8f9aa0640fa57fb9f-797f92b87a3f6608f6aa93d5326d7650.ssl.cf2.rackcdn.com/homepage-hero-01.01c640ff1d490897fd6b24531d9f4dc9.HJWjfivqg.jpg
+    imageCaption: <p>Our services not only care for your pet, but pamper them too.</p>
+    buttonText: Learn More
+    linksTo: 503
+    sortOrder: 3
+  -
+    imageTitle: Teamwork
+    image: https://20c8f9aa0640fa57fb9f-797f92b87a3f6608f6aa93d5326d7650.ssl.cf2.rackcdn.com/teamwork.01c640ff1d490897fd6b24531d9f4dc9.HyTq0Bs5e.jpeg
+    imageCaption: <p>Our team works together to bring you the best quality of care.</p>
+    buttonText: Learn More
+    linksTo: 587
+    sortOrder: 4
+  -
+    imageTitle: Promotions
+    image: https://20c8f9aa0640fa57fb9f-797f92b87a3f6608f6aa93d5326d7650.ssl.cf2.rackcdn.com/promotions-square.01c640ff1d490897fd6b24531d9f4dc9.Sy53l8ocg.jpg
+    imageCaption: <p>Check out our monthly promotions!</p>
+    buttonText: Learn More
+    linksTo: 507
+    sortOrder: 5
+  -
+    imageTitle: Resources
+    image: https://20c8f9aa0640fa57fb9f-797f92b87a3f6608f6aa93d5326d7650.ssl.cf2.rackcdn.com/homepage-squares-06.B1nDxHm9l.01c640ff1d490897fd6b24531d9f4dc9.jpeg
+    imageCaption: <p>Need more help? Check out our resources.</p>
+    buttonText: Learn More
+    linksTo: 503
+    sortOrder: 6
