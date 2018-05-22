@@ -156,6 +156,30 @@ fields:
     type: sort
     options:
       list: true
+-
+  label: Footer logos
+  name: footerLogos
+  type: dataset
+  content: contents/footerLogos
+  fields:
+    -
+      label: Logo Title
+      name: logoTitle
+      type: text
+      options:
+        list: true
+    -
+      label: Footer Logo
+      name: footerLogo
+      type: images
+      options:
+        list: true
+    -
+      label: Sort Order
+      name: sortOrder
+      type: sort
+      options:
+        list: true
 
 
 
