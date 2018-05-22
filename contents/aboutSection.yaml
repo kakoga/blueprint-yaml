@@ -1,0 +1,8 @@
+type: content
+content:
+  -
+    aboutSectionTitle: Zesty Pet Clinic
+    aboutSectionCopy: <p>From pre-appointment to post-appointment we take care of you every step of the way. We ensure that your pet is well cared for and that you can be comfortable with the decisions that you're making because you're well-informed of all your options. We'll treat your companion with compassionate care.</p>
+    aboutSectionButtonText: Learn More
+    aboutSectionButtonLinksTo: 501
+    sortOrder: 1

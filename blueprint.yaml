@@ -231,7 +231,7 @@ collections:
   hasRoute: false
   showAsTable: true
   options:
-    parentItem: zestyHome
+    parent: zesty_home
   fields:
     -
       label: Title
@@ -290,7 +290,7 @@ collections:
   hasRoute: false
   showAsTable: true
   options:
-    parentItem: zestyHome
+    parent: zesty_home
   fields:
     -
       label: Bubble Title
@@ -360,6 +360,46 @@ collections:
       label: Links To
       name: linksTo
       type: internal_link
+      options:
+        list: true
+    -
+      label: Sort Order
+      name: sortOrder
+      type: sort
+      options:
+        list: true
+-
+  label: About Section
+  name: aboutSection
+  type: dataset
+  content: contents/aboutSection.yaml
+  hasRoute: false
+  showAsTable: true
+  options:
+    parent: zesty_home
+  fields:
+    -
+      label: About Section Title
+      name: aboutSectionTitle
+      type: text
+      options:
+        list: true
+    -
+      label: About Section Copy
+      name: aboutSectionCopy
+      type: wysiwyg_advanced
+      options:
+        list: true
+    -
+      label: About Section Button Text
+      name: aboutSectionButtonText
+      type: text
+      options:
+        list: true
+    -
+      label: About Section Button Links To
+      name: aboutSectionButtonLinksTo
+      type: text
       options:
         list: true
     -
