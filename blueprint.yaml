@@ -562,6 +562,8 @@ collections:
   content: contents/faq.yaml
   hasRoute: true
   showAsTable: false
+  options:
+    parent: resources
   fields:
     -
       label: Page Title
@@ -579,4 +581,3 @@ collections:
       label: Body Text
       name: bodyText
       type: wysiwyg_advanced
-      
