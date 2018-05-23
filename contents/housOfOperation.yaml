@@ -1,0 +1,36 @@
+type: content
+content:
+  -
+    dayOfWeek: Sunday
+    open: 9:00
+    close: 3:00
+    sortOrder: 1
+  -
+    dayOfWeek: Monday
+    open: 9:00
+    close: 3:00
+    sortOrder: 2
+  -
+    dayOfWeek: Tuesday
+    open: 8:00
+    close: 7:00
+    sortOrder: 3
+  -
+    dayOfWeek: Wednesday
+    open: 9:00
+    close: 5:00
+  -
+    dayOfWeek: Thursday
+    open: 8:00
+    close: 7:00
+    sortOrder: 5
+  -
+    dayOfWeek: Friday
+    open: 8:00
+    close: 7:00
+    sortOrder: 6
+  -
+    dayOfWeek: Saturday
+    open: 9:00
+    close: 3:00
+    sortOrder: 7

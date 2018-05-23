@@ -497,3 +497,35 @@ collections:
       label: Google Map Embed
       name: googleMapEmbed
       type: textarea
+-
+  label: Hours of Operation (leave blank if closed)
+  name: hoursOfOperation
+  type: dataset
+  content: contents/hoursOfOperation.yaml
+  hasRoute: false
+  showAsTable: true
+  fields:
+    -
+      label: Day of Week
+      name: dayOfWeek
+      type: text
+      option:
+        list: true
+    -
+      label: open
+      name: Open
+      type: text
+      option:
+        list: true
+    -
+      label: close
+      name: Close
+      type: text
+      option:
+        list: true
+    -
+      label: Sort Order
+      name: sortOrder
+      type: sort
+      option:
+        list: true
