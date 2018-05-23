@@ -608,4 +608,31 @@ collections:
       label: Body Text
       name: bodyText
       type: wysiwyg_advanced
-    
+-
+  label: Links
+  name: links
+  type: templateset
+  view: views/links.tpl
+  content: contents/links.yaml
+  hasRoute: true
+  showAsTable: false
+  options:
+    parent: resources
+  fields:
+    -
+      label: Page Title
+      name: pageTitle
+      type: text
+      options:
+        required: true
+    -
+      label: Main Image
+      name: mainImage
+      type: images
+      options:
+        limit: 1
+    -
+      label: Body Text
+      name: bodyText
+      type: wysiwyg_advanced
+      
