@@ -180,6 +180,7 @@ collections:
     type: images
     options:
       list: true
+      limit: 1
   -
     label: Sort Order
     name: sortOrder
@@ -207,6 +208,7 @@ collections:
     type: images
     options:
       list: true
+      limit: 1
   -
     name: timeline_text
     label: Timeline text (leave blank if you do not want a timeline on your site)
@@ -257,6 +259,7 @@ collections:
       type: images
       options:
         list: true
+        limit: 1
     -
       label: Horizontal Alignment for Mobile
       name: horizontalAlignmentForMobile
@@ -310,6 +313,7 @@ collections:
       type: images
       options:
         list: true
+        limit: 1
     -
       label: Bubble Blurb
       name: bubbleBlurb
@@ -409,6 +413,7 @@ collections:
       options:
         list: true
 -
+  ## templateset needs - generic page template
   label: Generic Page
   name: genericPage
   type: templateset
@@ -427,4 +432,68 @@ collections:
       label: Page Content
       name: content
       type: wysiwyg_advanced
-      
+-
+  label: Contact Us
+  name: contactUs
+  type: templateset
+  view: views/contact_us.tpl
+  content: contents/contact_us.yaml
+  hasRoute: true
+  showAsTable: false
+  field:
+    -
+      label: Page Title
+      name: pageTitle
+      type: text
+      options:
+        required: true
+    -
+      label: Main Image
+      name: mainImage
+      type: images
+      options:
+        limit: 1
+    -
+      label: Address 1
+      name: addressOne
+      type: text
+    -
+      label: Address 2
+      name: addressTwo
+      type: text
+    -
+      label: Address 3
+      name: addressThree
+      type: text
+    -
+      label: General Info 1
+      name: generalInfoOne
+      type: textarea
+    -
+      label: Phone Number 1
+      name: phoneNumberOne
+      type: textarea
+    -
+      label: General Info 2
+      name: generalInfoTwo
+      type: textarea
+    -
+      label: Hours Title, e.g. Hours of Operation
+      name: hoursTitle
+      type: textarea
+    -
+      label: Phone Number 2
+      name: phoneNumberTwo
+      type: textarea
+    -
+      label: Special Hours Info
+      name: specialHoursInfo
+      type: textarea
+    -
+      label: General Info 3
+      name: generalInfoThree
+      type: textarea
+    -
+      label: Google Map Embed
+      name: googleMapEmbed
+      type: textarea
