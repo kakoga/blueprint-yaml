@@ -663,3 +663,31 @@ collections:
         type: sort
         options:
           list: true
+-
+  label: Breeder Questions
+  name: breederQ
+  type: dataset
+  content: contents/breederq.yaml
+  hasRoute: false
+  showAsTable: true
+  options:
+    parent: breederQuestions
+  fields:
+    -
+      label: Question
+      name: question
+      type: wysiwyg_advanced
+      options:
+        list: true
+    -
+      label: Answer
+      name: answer
+      type: wysiwyg_advanced
+      options:
+        list: true
+    -
+      label: Sort Order
+      name: sortOrder
+      type: sort
+      options:
+        list: true
