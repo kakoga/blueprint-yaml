@@ -554,4 +554,29 @@ collections:
       label: Body Text
       name: bodyText
       type: wysiwyg_advanced
+-
+  label: FAQ
+  name: faq
+  type: templateset
+  view: views/faq.tpl
+  content: contents/faq.yaml
+  hasRoute: true
+  showAsTable: false
+  fields:
+    -
+      label: Page Title
+      name: pageTitle
+      type: text
+      options:
+        required: true
+    -
+      label: Main Image
+      name: mainImage
+      type: images
+      options:
+        limit: 1
+    -
+      label: Body Text
+      name: bodyText
+      type: wysiwyg_advanced
       
