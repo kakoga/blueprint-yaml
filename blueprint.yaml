@@ -421,7 +421,7 @@ collections:
   content: contents/generic_page.yaml
   hasRoute: true
   showAsTable: false
-  field:
+  fields:
     -
       label: "Page Title (H1)"
       name: title
@@ -440,7 +440,7 @@ collections:
   content: contents/contact_us.yaml
   hasRoute: true
   showAsTable: false
-  field:
+  fields:
     -
       label: Page Title
       name: pageTitle
@@ -529,3 +529,29 @@ collections:
       type: sort
       option:
         list: true
+-
+  label: Resources
+  name: resources
+  type: templateset
+  view: view/resources.tpl
+  content: contents/resources.yaml
+  hasRoute: true
+  showAsTable: false
+  fields:
+    -
+      label: Page Title
+      name: pageTitle
+      type: text
+      options:
+        required: true
+    -
+      label: Main Image
+      name: mainImage
+      type: images
+      options:
+        limit: 1
+    -
+      label: Body Text
+      name: bodyText
+      type: wysiwyg_advanced
+      
