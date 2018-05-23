@@ -581,3 +581,31 @@ collections:
       label: Body Text
       name: bodyText
       type: wysiwyg_advanced
+-
+  label: Breeder Questions
+  name: breederQuestions
+  type: templateset
+  view: views/breederQuestions.tpl
+  content: contents/breederQuestions.yaml
+  hasRoute: true
+  showAsTable: false
+  options:
+    parent: resources
+  fields:
+    -
+      label: Page Title
+      name: pageTitle
+      type: text
+      options:
+        required: true
+    -
+      label: Main Image
+      name: mainImage
+      type: images
+      options:
+        limit: 1
+    -
+      label: Body Text
+      name: bodyText
+      type: wysiwyg_advanced
+    
