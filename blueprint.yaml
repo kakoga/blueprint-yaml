@@ -635,4 +635,31 @@ collections:
       label: Body Text
       name: bodyText
       type: wysiwyg_advanced
-      
+-
+  label: Frequently Asked Questions
+  name: frequentlyAskedQuestions
+  type: dataset
+  contents: contents/frequentlyAskedQuestions.yaml
+  hasRoute: false
+  showAsTable: true
+  options:
+    parent: faq
+    fields:
+      -
+        label: Question
+        name: question
+        type: wysiwyg_advanced
+        options:
+          list: true
+      -
+        label: Answer
+        name: answer
+        type: wysiwyg_advanced
+        options:
+          list: true
+      -
+        label: Sort Order
+        name: sortOrder
+        type: sort
+        options:
+          list: true

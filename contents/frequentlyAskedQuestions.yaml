@@ -1,0 +1,14 @@
+type: contents
+content:
+  -
+    question: Do you have a veterinarian on-call for after-hours emergencies?
+    answer: Yes, we do. If you have an after-hours emergency, please call us at: 1-800-555-5555
+    sortOrder: 1
+  -
+    question: What types of flea medication do you offer?
+    answer: We offer injectable, oral, and topical flea solutions. Please ask your veterinarian about which one would work best for your needs.
+    sortOrder: 2
+  -
+    question: How often should I brush my dog or cat's teeth?
+    answer: It's important to start the habit when they are young and get them used to the feel of a toothbrush. Ideally, a daily brushing for dogs, and every other day for cats. Ask your veterinarian for tips on how to train your pet to get used to this routine.
+    sortOrder: 3
