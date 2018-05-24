@@ -691,3 +691,32 @@ collections:
       type: sort
       options:
         list: true
+-
+  label: External Links
+  name: externalLinks
+  type: dataset
+  content: contents/externalLinks.yaml
+  hasRoute: false
+  showAsTable: true
+  options:
+    parent: links
+  fields:
+    -
+      label: Link Title
+      name: linkTitle
+      type: text
+      options:
+        list: true
+    -
+      label: Link URL
+      name: linkUrl
+      type: textarea
+      options:
+        list: true
+    -
+      label: Sort Order
+      name: sortOrder
+      type: sort
+      options:
+        list: true
+        

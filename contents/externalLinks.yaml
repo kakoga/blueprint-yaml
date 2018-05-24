@@ -1,0 +1,14 @@
+type: content
+content:
+  -
+    linkTitle: American Kennel Club
+    linkUrl: http://www.akc.org/
+    sortOrder: 1
+  -
+    linkTitle: Cat Fanciers' Association
+    linkUrl: http://cfa.org/
+    sortOrder: 2
+  -
+    linkTitle: American Society of Ichthyologists and Heretologists
+    linkUrl: http://www.asih.org/
+    sortOrder: 3
