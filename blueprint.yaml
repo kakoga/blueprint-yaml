@@ -744,3 +744,49 @@ collections:
       label: Body Text
       name: bodyText
       type: wysiwyg_advanced
+-
+  label: Special Promotions
+  name: promo
+  type: dataset
+  content: contents/promo.yaml
+  hasRoute: false
+  showAsTable: true
+  options:
+    parent: promotions
+  fields:
+    -
+      label: Promo Title
+      name: promoTitle
+      type: text
+      options:
+        list: true
+    -
+      label: Promo Description
+      name: promoDescription
+      type: wysiwyg_advanced
+      options:
+        list: true
+    -
+      label: Promo Image
+      name: promoImage
+      type: images
+      options:
+        list: true
+    -
+      label: Promo Code
+      name: promoCode
+      type: text
+      options:
+        list: true
+    -
+      label: Promo Print Coupon
+      name: promoPrintCoupon
+      type: files
+      options:
+        list: true
+    -
+      label: Sort Order
+      name: sortOrder
+      type: sort
+      options:
+        list: true

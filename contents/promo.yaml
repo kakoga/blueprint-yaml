@@ -1,0 +1,16 @@
+type: content
+content:
+  -
+    promoTitle: &#36;25 Off Your Visit!
+    promoDescription: Get &#36;25.00 off your first visit. New clients only
+    promoImage: https://20c8f9aa0640fa57fb9f-797f92b87a3f6608f6aa93d5326d7650.ssl.cf2.rackcdn.com/first-visit-1.87d35a3ecfc32c7741be2b1d18a40f65.jpeg
+    promoCode: FIRSTVISIT25
+    promoPrintCoupon: https://cdb368edefc437a74249-428b2f4da1bce612540a137d021c11ad.ssl.cf2.rackcdn.com/FREEFirstExamCoupon.pdf
+    sortOrder: 1
+  -
+    promoTitle: 2 for 1 Flea Treatments
+    promoDescription: Purchase one topical flea treatment and one of equal or lesser value for free.
+    promoImage: https://20c8f9aa0640fa57fb9f-797f92b87a3f6608f6aa93d5326d7650.ssl.cf2.rackcdn.com/Cat_scratching.87d35a3ecfc32c7741be2b1d18a40f65.jpg
+    promoCode: NOFLEAS
+    promoPrintCoupon: https://cdb368edefc437a74249-428b2f4da1bce612540a137d021c11ad.ssl.cf2.rackcdn.com/2016AppCoupon.PDF
+    sortOrder: 2
