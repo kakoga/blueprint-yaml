@@ -719,4 +719,28 @@ collections:
       type: sort
       options:
         list: true
-        
+-
+  label: Promotions
+  name: promotions
+  type: templateset
+  view: views/promotions.tpl
+  content: contents/promotions.yaml
+  hasRoute: true
+  showAsTable: false
+  fields:
+    -
+      label: Page Title
+      name: pageTitle
+      type: text
+      options:
+        required: true
+    -
+      label: Main Image
+      name: mainImage
+      type: images
+      options:
+        limit: 1
+    -
+      label: Body Text
+      name: bodyText
+      type: wysiwyg_advanced
