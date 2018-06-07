@@ -893,4 +893,37 @@ collections:
       label: Body Text
       name: bodyText
       type: wysiwyg_advanced
-    
+-
+  label: Online Forms
+  name: onlineForms
+  type: dataset
+  content: contents/onlineForms.yaml
+  hasRoute: false
+  showAsTable: true
+  options:
+    parent: patientForms
+  fields:
+    -
+      label: Form Title
+      name: formTitle
+      type: text
+      options:
+        list: true
+    -
+      label: Form Description
+      name: formDescription
+      type: wysiwyg_advanced
+      options:
+        list: true
+    -
+      label: Form PDF
+      name: formPdf
+      type: files
+      options:
+        list: true
+    -
+      label: Sort Order
+      name: sortOrder
+      type: sort
+      options:
+        list: true

@@ -1,0 +1,17 @@
+type: content
+contents:
+  -
+    formTitle: New Patient Form
+    formDescription: <p>All new patients wil need to fill our this form.</p>
+    formPdf: https://cdb368edefc437a74249-428b2f4da1bce612540a137d021c11ad.ssl.cf2.rackcdn.com/patient-forms-sample.pdf
+    sortOrder: 1
+  -
+    formTitle: Anaesthesia Consent Form
+    formDescription: <p>This for is required for any procedure that involves sedation.</p>
+    formPdf: https://cdb368edefc437a74249-428b2f4da1bce612540a137d021c11ad.ssl.cf2.rackcdn.com/patient-forms-sample.pdf
+    sortOrder: 2
+  -
+    formTitle: Boarding Consent Form
+    formDescription: <p>This form is required every time you reserve a boarding space.</p>
+    formPdf: https://cdb368edefc437a74249-428b2f4da1bce612540a137d021c11ad.ssl.cf2.rackcdn.com/patient-forms-sample.pdf
+    sortOrder: 3
