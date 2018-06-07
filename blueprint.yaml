@@ -865,4 +865,32 @@ collections:
       name: sendFormTo
       type: text
       options:
-        required: true 
+        required: true
+-
+  label: Payment Options
+  name: paymentOptions
+  type: templateset
+  view: views/paymentOptions.tpl
+  content: contents/paymentOptions.yaml
+  hasRoute: true
+  showAsTable: false
+  options:
+    parent: patientResources
+  fields:
+    -
+      label: Page Title
+      name: pageTitle
+      type: text
+      options:
+        required: true
+    -
+      label: Main Image
+      name: mainImage
+      type: images
+      options:
+        limit: 1
+    -
+      label: Body Text
+      name: bodyText
+      type: wysiwyg_advanced
+    
