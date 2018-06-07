@@ -790,3 +790,24 @@ collections:
       type: sort
       options:
         list: true
+-
+  label: Patient resources
+  name: patientResources
+  type: templateset
+  view: views/patientResources.tpl
+  content: contents/patientResources.yaml
+  hasRoute: true
+  showAsTable: false
+  fields:
+    -
+      label: Page Title
+      name: pageTitle
+      type: text
+    -
+      label: Main Image
+      name: mainImage
+      type: images
+    -
+      label: Body Text
+      name: bodyText
+      type: wysiwyg_advanced
