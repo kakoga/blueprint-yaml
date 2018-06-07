@@ -772,6 +772,7 @@ collections:
       type: images
       options:
         list: true
+        limit: 1
     -
       label: Promo Code
       name: promoCode
@@ -807,7 +808,61 @@ collections:
       label: Main Image
       name: mainImage
       type: images
+      options:
+        limit: 1
     -
       label: Body Text
       name: bodyText
       type: wysiwyg_advanced
+-
+  label: Patient Forms
+  name: patientForms
+  type: templateset
+  view: views/patientForms.tpl
+  content: contents/patientForms.yaml
+  hasRoute: true
+  showAsTable: false
+  options:
+    parent: patientResources
+  fields:
+    -
+      label: Page Title
+      name: pageTitle
+      type: text
+      options:
+        required: true
+    -
+      label: mainImage
+      name: Main Image
+      type: images
+      options:
+        limit: 1
+    -
+      label: Body Text
+      name: bodyText
+      type: textarea
+    -
+      label: Downloadable Forms Note
+      name: downloadFormNote
+      type: textarea
+    -
+      label: Form Instructions
+      name: embeddedFormInstrux
+      type: textarea
+    -
+      label: Default Form Fields
+      name: defaultFields
+      type: dropdown
+      dropdown: "no_form:No Form;patient_basic:Patient Basic;patient_address:Patient Address;patient_address_and_pet_info:Patient address and Pet Info"
+    -
+      label: Additional Form Fields (add additional fields that you've created in the Custom Form dataset)
+      name: additionalFields
+      type: one_to_many
+      relationship: custom_form_fields
+      relationship_field: custom_field_name
+    -
+      label: Send Form To (email address)
+      name: sendFormTo
+      type: text
+      options:
+        required: true 
