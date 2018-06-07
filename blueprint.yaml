@@ -927,3 +927,31 @@ collections:
       type: sort
       options:
         list: true
+-
+  label: Services
+  name: services
+  type: templateset
+  view: views/services.tpl
+  content: contents/services.yaml
+  hasRoute: true
+  showAsTable: false
+  fields:
+    -
+      label: Page Title
+      name: pageTitle
+      type: text
+      options:
+        required: true
+    -
+      label: Main Image
+      name: mainImage
+      type: images
+      options:
+        limit: 1
+    -
+      label: Body Text
+      name: bodyText
+      type: wysiwyg_advanced
+      options:
+        list: 1
+         
