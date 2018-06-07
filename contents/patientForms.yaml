@@ -1,0 +1,11 @@
+type: content
+content:
+  -
+    pageTitle: Patient Forms
+    mainImage: https://20c8f9aa0640fa57fb9f-797f92b87a3f6608f6aa93d5326d7650.ssl.cf2.rackcdn.com/paperwork.jpeg
+    bodyText: Please find most of our patient forms below.
+    downloadFormNote: Please see a list of our most common forms below. Once you find the form that you need, click the PDF icon to download.
+    embeddedFormInstrux: If you're interested in Doggy Day Care, please make an appointment and then fill out the form below.
+    defaultFields: no_form
+    additionalFields:
+    sendFormTo: petclinic@email.custom
