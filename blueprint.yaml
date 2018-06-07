@@ -954,4 +954,38 @@ collections:
       type: wysiwyg_advanced
       options:
         list: 1
-         
+-
+  label: Vet Services
+  name: vetServices
+  type: pageset
+  view: views/vetServices.tpl
+  content: contents/vetServices.yaml
+  hasRoute: true
+  showAsTable: false
+  options:
+    parent: services
+  fields:
+    -
+      label: Page Title
+      name: pageTitle
+      type: text
+      options:
+        list: true
+    -
+      label: Main Image
+      name: mainImage
+      type: images
+      options:
+        list: true
+        limit: 1
+    -
+      label: Body Text
+      name: bodyText
+      type: wysiwyg_advanced
+    -
+      label: Sort Order
+      name: sortOrder
+      type: sort
+      options:
+        required: true
+        list: true 
