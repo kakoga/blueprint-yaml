@@ -1,5 +1,5 @@
 type: content
-contents:
+content:
   -
     formTitle: New Patient Form
     formDescription: <p>All new patients wil need to fill our this form.</p>
